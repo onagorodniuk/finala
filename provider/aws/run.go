@@ -49,7 +49,7 @@ func (app *Analyze) All() {
 
 		for _, region := range account.Regions {
 			log.WithFields(log.Fields{
-				"account": account,
+				"account": account.Name,
 				"region":  region,
 			}).Info("Start to analyze resources")
 
